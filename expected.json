@@ -1,0 +1,430 @@
+[
+ {
+  "fn": "convertTruth",
+  "args": [
+   "5",
+   "day"
+  ],
+  "expected": "5 per day is exactly 35 per week, about 152.08 per month and exactly 1,825 per year."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "100",
+   "week"
+  ],
+  "expected": "100 per week is about 14.29 per day, about 434.52 per month and about 5,214.29 per year."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "1200",
+   "month"
+  ],
+  "expected": "1200 per month is about 39.45 per day, about 276.16 per week and exactly 14,400 per year."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "60000",
+   "year"
+  ],
+  "expected": "60000 per year is about 164.38 per day, about 1,150.68 per week and exactly 5,000 per month."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "0.01",
+   "year"
+  ],
+  "expected": "0.01 per year is under 0.01 per day, under 0.01 per week and under 0.01 per month."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "0.01",
+   "day"
+  ],
+  "expected": "0.01 per day is exactly 0.07 per week, about 0.3 per month and exactly 3.65 per year."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "1000000",
+   "year"
+  ],
+  "expected": "1000000 per year is about 2,739.73 per day, about 19,178.08 per week and about 83,333.33 per month."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "1000000",
+   "day"
+  ],
+  "expected": "1000000 per day is exactly 7,000,000 per week, about 30,416,666.67 per month and exactly 365,000,000 per year."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "4.99",
+   "month"
+  ],
+  "expected": "4.99 per month is about 0.16 per day, about 1.15 per week and exactly 59.88 per year."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "15.5",
+   "week"
+  ],
+  "expected": "15.5 per week is about 2.21 per day, about 67.35 per month and about 808.21 per year."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   " 7 ",
+   "day"
+  ],
+  "expected": "7 per day is exactly 49 per week, about 212.92 per month and exactly 2,555 per year."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "365",
+   "year"
+  ],
+  "expected": "365 per year is exactly 1 per day, exactly 7 per week and about 30.42 per month."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "12",
+   "month"
+  ],
+  "expected": "12 per month is about 0.39 per day, about 2.76 per week and exactly 144 per year."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "0",
+   "day"
+  ],
+  "expected": "ERR:amount must be a positive number with at most 2 decimals, from 0.01 to 1000000"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "-5",
+   "day"
+  ],
+  "expected": "ERR:amount must be a positive number with at most 2 decimals, from 0.01 to 1000000"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "abc",
+   "day"
+  ],
+  "expected": "ERR:amount must be a positive number with at most 2 decimals, from 0.01 to 1000000"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "5.555",
+   "day"
+  ],
+  "expected": "ERR:amount must be a positive number with at most 2 decimals, from 0.01 to 1000000"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "1000000.01",
+   "day"
+  ],
+  "expected": "ERR:amount must be a positive number with at most 2 decimals, from 0.01 to 1000000"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "5",
+   "hour"
+  ],
+  "expected": "ERR:period must be one of day, week, month, year"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "",
+   "day"
+  ],
+  "expected": "ERR:amount must be a positive number with at most 2 decimals, from 0.01 to 1000000"
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "5",
+   "day",
+   "1",
+   "year"
+  ],
+  "expected": "5 per day for 1 year adds up to exactly 1,825 in total."
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "5",
+   "day",
+   "3",
+   "month"
+  ],
+  "expected": "5 per day for 3 months adds up to exactly 456.25 in total."
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "100",
+   "week",
+   "1",
+   "month"
+  ],
+  "expected": "100 per week for 1 month adds up to about 434.52 in total."
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "10",
+   "week",
+   "52",
+   "week"
+  ],
+  "expected": "10 per week for 52 weeks adds up to exactly 520 in total."
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "4.99",
+   "month",
+   "12",
+   "month"
+  ],
+  "expected": "4.99 per month for 12 months adds up to exactly 59.88 in total."
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "4.99",
+   "month",
+   "1",
+   "year"
+  ],
+  "expected": "4.99 per month for 1 year adds up to exactly 59.88 in total."
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "0.01",
+   "year",
+   "1",
+   "day"
+  ],
+  "expected": "0.01 per year for 1 day adds up to under 0.01 in total."
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "1000000",
+   "year",
+   "10000",
+   "year"
+  ],
+  "expected": "1000000 per year for 10000 years adds up to exactly 10,000,000,000 in total."
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "2",
+   "day",
+   "1",
+   "week"
+  ],
+  "expected": "2 per day for 1 week adds up to exactly 14 in total."
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "2",
+   "day",
+   "1",
+   "day"
+  ],
+  "expected": "2 per day for 1 day adds up to exactly 2 in total."
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "19.99",
+   "month",
+   "18",
+   "month"
+  ],
+  "expected": "19.99 per month for 18 months adds up to exactly 359.82 in total."
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "5",
+   "day",
+   "0",
+   "year"
+  ],
+  "expected": "ERR:count must be a whole number from 1 to 10000"
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "5",
+   "day",
+   "10001",
+   "day"
+  ],
+  "expected": "ERR:count must be a whole number from 1 to 10000"
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "5",
+   "day",
+   "1.5",
+   "year"
+  ],
+  "expected": "ERR:count must be a whole number from 1 to 10000"
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "5",
+   "fortnight",
+   "1",
+   "year"
+  ],
+  "expected": "ERR:period must be one of day, week, month, year"
+ },
+ {
+  "fn": "totalTruth",
+  "args": [
+   "5",
+   "day",
+   "1",
+   "decade"
+  ],
+  "expected": "ERR:period must be one of day, week, month, year"
+ },
+ {
+  "fn": "needTruth",
+  "args": [
+   "1000",
+   "6",
+   "month"
+  ],
+  "expected": "To reach 1000 in 6 months takes about 5.48 per day, about 38.36 per week, about 166.67 per month and exactly 2,000 per year."
+ },
+ {
+  "fn": "needTruth",
+  "args": [
+   "1000",
+   "1",
+   "year"
+  ],
+  "expected": "To reach 1000 in 1 year takes about 2.74 per day, about 19.18 per week, about 83.33 per month and exactly 1,000 per year."
+ },
+ {
+  "fn": "needTruth",
+  "args": [
+   "5000",
+   "52",
+   "week"
+  ],
+  "expected": "To reach 5000 in 52 weeks takes about 13.74 per day, about 96.15 per week, about 417.81 per month and about 5,013.74 per year."
+ },
+ {
+  "fn": "needTruth",
+  "args": [
+   "0.01",
+   "10000",
+   "year"
+  ],
+  "expected": "To reach 0.01 in 10000 years takes under 0.01 per day, under 0.01 per week, under 0.01 per month and under 0.01 per year."
+ },
+ {
+  "fn": "needTruth",
+  "args": [
+   "1000000",
+   "1",
+   "day"
+  ],
+  "expected": "To reach 1000000 in 1 day takes exactly 1,000,000 per day, exactly 7,000,000 per week, about 30,416,666.67 per month and exactly 365,000,000 per year."
+ },
+ {
+  "fn": "needTruth",
+  "args": [
+   "250",
+   "1",
+   "week"
+  ],
+  "expected": "To reach 250 in 1 week takes about 35.71 per day, exactly 250 per week, about 1,086.31 per month and about 13,035.71 per year."
+ },
+ {
+  "fn": "needTruth",
+  "args": [
+   "1200",
+   "1",
+   "month"
+  ],
+  "expected": "To reach 1200 in 1 month takes about 39.45 per day, about 276.16 per week, exactly 1,200 per month and exactly 14,400 per year."
+ },
+ {
+  "fn": "needTruth",
+  "args": [
+   "99.99",
+   "7",
+   "day"
+  ],
+  "expected": "To reach 99.99 in 7 days takes about 14.28 per day, exactly 99.99 per week, about 434.48 per month and about 5,213.76 per year."
+ },
+ {
+  "fn": "needTruth",
+  "args": [
+   "1000",
+   "0",
+   "month"
+  ],
+  "expected": "ERR:count must be a whole number from 1 to 10000"
+ },
+ {
+  "fn": "needTruth",
+  "args": [
+   "abc",
+   "6",
+   "month"
+  ],
+  "expected": "ERR:target must be a positive number with at most 2 decimals, from 0.01 to 1000000"
+ },
+ {
+  "fn": "needTruth",
+  "args": [
+   "1000",
+   "6",
+   "era"
+  ],
+  "expected": "ERR:period must be one of day, week, month, year"
+ },
+ {
+  "fn": "needTruth",
+  "args": [
+   "1000",
+   "x",
+   "month"
+  ],
+  "expected": "ERR:count must be a whole number from 1 to 10000"
+ }
+]
